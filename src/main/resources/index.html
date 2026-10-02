@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,49 +11,50 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./static/css/style.css">
 </head>
+
 <body>
 
-   <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
 
-                <a class="navbar-brand" href="../index.html">
-                    ☕ Cafeteria <span>Oliveira</span>
-                </a>
+        <a class="navbar-brand" href="../index.html">
+          ☕ Cafeteria <span>Oliveira</span>
+        </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
-                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
 
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="collapse navbar-collapse" id="menuPrincipal">
-                    <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html#home">
-                                Início
-                            </a>
-                        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#home">
+                Início
+              </a>
+            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link active" href="produtos.html">
-                                Produtos
-                            </a>
-                        </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="produtos.html">
+                Produtos
+              </a>
+            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="pedidos.html">
-                                Pedidos
-                            </a>
-                        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pedidos.html">
+                Pedidos
+              </a>
+            </li>
 
-                    </ul>
-                </div>
+          </ul>
+        </div>
 
-            </div>
-        </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
   <main>
     <section id="home" class="hero-section">
@@ -106,13 +108,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div class="image-card">
-              <img
-                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80"
-                alt="Interior da Cafeteria Oliveira">
-            </div>
-          </div>
+        
         </div>
       </div>
     </section>
@@ -124,96 +120,69 @@
           <h2 class="section-title">Um espaço pensado para cada momento</h2>
         </div>
 
-        <div id="carouselAmbientes" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="ambiente-card">
-                <div class="ambiente-image"
-                  style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80');">
-                </div>
-                <div class="ambiente-content">
-                  <h3>Área de convivência</h3>
-                  <p>Mesas confortáveis, luz suave e ambiente acolhedor para conversar, ler e relaxar.</p>
-                </div>
-              </div>
+              <img src="..." class="d-block w-100" alt="...">
             </div>
-
             <div class="carousel-item">
-              <div class="ambiente-card">
-                <div class="ambiente-image"
-                  style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e5a1ad282?auto=format&fit=crop&w=1200&q=80');">
-                </div>
-                <div class="ambiente-content">
-                  <h3>Barra de café</h3>
-                  <p>Preparo artesanal e experiência do café em todos os detalhes, com atenção à qualidade.</p>
-                </div>
-              </div>
+              <img src="..." class="d-block w-100" alt="...">
             </div>
-
             <div class="carousel-item">
-              <div class="ambiente-card">
-                <div class="ambiente-image"
-                  style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a36ae57?auto=format&fit=crop&w=1200&q=80');">
-                </div>
-                <div class="ambiente-content">
-                  <h3>Cabines e leitura</h3>
-                  <p>Um cantinho tranquilo para focar, ler e saborear um café em paz.</p>
-                </div>
-              </div>
+              <img src="..." class="d-block w-100" alt="...">
             </div>
           </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselAmbientes" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselAmbientes" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
-    </section>
 
-    <section id="localizacao" class="section localizacao-section">
-      <div class="container">
-        <div class="text-center mb-5">
-          <div class="section-label center">Localização</div>
-          <h2 class="section-title">No coração do bairro, perto de quem gosta de bons momentos</h2>
-        </div>
+        <section id="localizacao" class="section localizacao-section">
+          <div class="container">
+            <div class="text-center mb-5">
+              <div class="section-label center">Localização</div>
+              <h2 class="section-title">No coração do bairro, perto de quem gosta de bons momentos</h2>
+            </div>
 
-        <p class="localizacao-text">
-          A Cafeteria Oliveira está localizada em um ponto estratégico do bairro, com fácil acesso e ambiente
-          agradável para receber clientes de todas as idades.
-        </p>
+            <p class="localizacao-text">
+              A Cafeteria Oliveira está localizada em um ponto estratégico do bairro, com fácil acesso e ambiente
+              agradável para receber clientes de todas as idades.
+            </p>
 
-        <div class="row justify-content-center g-4 mt-4">
-          <div class="col-md-5">
-            <div class="info-card">
-              <h3>Endereço</h3>
-              <p>Rua das Flores, 245 - Centro</p>
+            <div class="row justify-content-center g-4 mt-4">
+              <div class="col-md-5">
+                <div class="info-card">
+                  <h3>Endereço</h3>
+                  <p>Rua das Flores, 245 - Centro</p>
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <div class="info-card">
+                  <h3>Horário</h3>
+                  <p>Segunda a Domingo<br>08h às 21h</p>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div class="col-md-5">
-            <div class="info-card">
-              <h3>Horário</h3>
-              <p>Segunda a Domingo<br>08h às 21h</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="memorial" class="section memorial-section">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <div class="image-card memorial-card">
-              <img
-                src="https://images.unsplash.com/photo-1447933601403-0c6688e566e6?auto=format&fit=crop&w=900&q=80"
-                alt="História do café">
-            </div>
-          </div>
-
+        <section id="memorial" class="section memorial-section">
           <div class="col-lg-6">
             <div class="section-label">A história do café</div>
             <h2 class="section-title">O café ao longo dos tempos</h2>
@@ -230,56 +199,57 @@
               e se democratizou em diversos continentes, tornando-se parte essencial da cultura global.
             </p>
           </div>
-        </div>
+      </div>
       </div>
     </section>
   </main>
 
-      <footer class="site-footer">
-        <div class="container">
-            <div class="footer-inner">
-                <div class="footer-brand">
-                    <div class="brand-icon">☕</div>
-                    <div>
-                        <h3>Cafeteria Oliveira</h3>
-                        <p>Café artesanal e momentos especiais.</p>
-                    </div>
-                </div>
-
-                <div>
-                    <h4>Menu</h4>
-                    <ul class="footer-list">
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="pedidos.html">Pedidos</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>Contato</h4>
-                    <ul class="footer-list">
-                        <li><span>📍</span> Rua das Flores, 245</li>
-                        <li><span>📞</span> (11) 99999-8888</li>
-                        <li><a href="mailto:contato@cafeteriaoliveira.com"><span>📧</span>
-                                contato@cafeteriaoliveira.com</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="footer-divider"></div>
-
-            <div class="footer-bottom">
-                <div class="social-links">
-                    <a href="#" aria-label="Instagram" title="Instagram">Instagram</a>
-                    <a href="#" aria-label="Facebook" title="Facebook">Facebook</a>
-                    <a href="#" aria-label="WhatsApp" title="WhatsApp">WhatsApp</a>
-                </div>
-                <p>© 2026 Cafeteria Oliveira. Todos os direitos reservados.</p>
-            </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="brand-icon">☕</div>
+          <div>
+            <h3>Cafeteria Oliveira</h3>
+            <p>Café artesanal e momentos especiais.</p>
+          </div>
         </div>
-    </footer>
+
+        <div>
+          <h4>Menu</h4>
+          <ul class="footer-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contato</h4>
+          <ul class="footer-list">
+            <li><span>📍</span> Rua das Flores, 245</li>
+            <li><span>📞</span> (11) 99999-8888</li>
+            <li><a href="mailto:contato@cafeteriaoliveira.com"><span>📧</span>
+                contato@cafeteriaoliveira.com</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" title="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook" title="Facebook">Facebook</a>
+          <a href="#" aria-label="WhatsApp" title="WhatsApp">WhatsApp</a>
+        </div>
+        <p>© 2026 Cafeteria Oliveira. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
