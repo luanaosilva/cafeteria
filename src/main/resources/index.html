@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafeteria Oliveira</title>
+  <meta name="description" content="Cafeteria Oliveira — café artesanal, acolhimento e momentos especiais." />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+
+   <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand" href="../index.html">
+                    ☕ Cafeteria <span>Oliveira</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#home">
+                                Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="produtos.html">
+                                Produtos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pedidos.html">
+                                Pedidos
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="row min-vh-100 align-items-center justify-content-center text-center">
+          <div class="col-lg-9">
+            <p class="hero-kicker">Cafeteria Oliveira</p>
+            <h1>Um lugar onde a cultura do café se encontra com o acolhimento</h1>
+            <p class="hero-text">
+              Sabores, encontros e momentos especiais em um ambiente acolhedor e cheio de tradição.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#historia" class="btn btn-primary rounded-pill px-4 py-3">
+                Conheça a história
+              </a>
+              <a href="./templates/produtos.html" class="btn btn-light rounded-pill px-4 py-3">
+                Ver cardápio
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="historia" class="section historia-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="section-label">Como surgiu a ideia do negócio</div>
+            <h2 class="section-title">
+              A história da <span class="highlight">Cafeteria Oliveira</span>
+            </h2>
+
+            <p class="lead-text">
+              A Cafeteria Oliveira nasceu da vontade de transformar uma rotina simples em um espaço de encontro,
+              inspiração e sabor. Tudo começou com a família Oliveira, que durante anos cultivou uma relação
+              especial com o café.
+            </p>
+
+            <p class="lead-text">
+              A ideia surgiu quando perceberam que o bairro precisava de um lugar acolhedor, com boa bebida e
+              atendimento genuíno. Um espaço onde o café era mais do que uma bebida: era uma forma de celebrar
+              a rotina e a conversa.
+            </p>
+
+            <div class="quote-box">
+              <p>“Cada xícara de café é um convite para desacelerar e apreciar a vida.”</p>
+              <span>— Família Oliveira</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="image-card">
+              <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80"
+                alt="Interior da Cafeteria Oliveira">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ambientes" class="section ambientes-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-label center">Ambientes internos</div>
+          <h2 class="section-title">Um espaço pensado para cada momento</h2>
+        </div>
+
+        <div id="carouselAmbientes" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="ambiente-card">
+                <div class="ambiente-image"
+                  style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80');">
+                </div>
+                <div class="ambiente-content">
+                  <h3>Área de convivência</h3>
+                  <p>Mesas confortáveis, luz suave e ambiente acolhedor para conversar, ler e relaxar.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="ambiente-card">
+                <div class="ambiente-image"
+                  style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e5a1ad282?auto=format&fit=crop&w=1200&q=80');">
+                </div>
+                <div class="ambiente-content">
+                  <h3>Barra de café</h3>
+                  <p>Preparo artesanal e experiência do café em todos os detalhes, com atenção à qualidade.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="ambiente-card">
+                <div class="ambiente-image"
+                  style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a36ae57?auto=format&fit=crop&w=1200&q=80');">
+                </div>
+                <div class="ambiente-content">
+                  <h3>Cabines e leitura</h3>
+                  <p>Um cantinho tranquilo para focar, ler e saborear um café em paz.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselAmbientes" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselAmbientes" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao" class="section localizacao-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-label center">Localização</div>
+          <h2 class="section-title">No coração do bairro, perto de quem gosta de bons momentos</h2>
+        </div>
+
+        <p class="localizacao-text">
+          A Cafeteria Oliveira está localizada em um ponto estratégico do bairro, com fácil acesso e ambiente
+          agradável para receber clientes de todas as idades.
+        </p>
+
+        <div class="row justify-content-center g-4 mt-4">
+          <div class="col-md-5">
+            <div class="info-card">
+              <h3>Endereço</h3>
+              <p>Rua das Flores, 245 - Centro</p>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="info-card">
+              <h3>Horário</h3>
+              <p>Segunda a Domingo<br>08h às 21h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="memorial" class="section memorial-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="image-card memorial-card">
+              <img
+                src="https://images.unsplash.com/photo-1447933601403-0c6688e566e6?auto=format&fit=crop&w=900&q=80"
+                alt="História do café">
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="section-label">A história do café</div>
+            <h2 class="section-title">O café ao longo dos tempos</h2>
+
+            <p class="lead-text">
+              O café é uma das bebidas mais consumidas do mundo. Suas raízes remontam às terras altas da Etiópia,
+              atravessando continentes e séculos até chegar ao coração de nossas mesas. Descoberto na Etiópia,
+              o café evoluiu de um ritual simples para a bebida que conhecemos hoje.
+            </p>
+
+            <p class="lead-text">
+              Os árabes foram os primeiros a cultivar o café em larga escala e criaram as primeiras cafeterias,
+              que se tornaram centros de encontro e convivência. Através de comerciantes, o café chegou à Europa
+              e se democratizou em diversos continentes, tornando-se parte essencial da cultura global.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+      <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="brand-icon">☕</div>
+                    <div>
+                        <h3>Cafeteria Oliveira</h3>
+                        <p>Café artesanal e momentos especiais.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Menu</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="pedidos.html">Pedidos</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contato</h4>
+                    <ul class="footer-list">
+                        <li><span>📍</span> Rua das Flores, 245</li>
+                        <li><span>📞</span> (11) 99999-8888</li>
+                        <li><a href="mailto:contato@cafeteriaoliveira.com"><span>📧</span>
+                                contato@cafeteriaoliveira.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram" title="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook" title="Facebook">Facebook</a>
+                    <a href="#" aria-label="WhatsApp" title="WhatsApp">WhatsApp</a>
+                </div>
+                <p>© 2026 Cafeteria Oliveira. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

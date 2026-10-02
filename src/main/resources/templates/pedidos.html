@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Faça seu pedido na Cafeteria Oliveira.">
+
+    <title>Pedidos | Cafeteria Oliveira</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS usado pelo index.html: deixa header e footer iguais -->
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <!-- CSS específico da página de pedidos -->
+    <link rel="stylesheet" href="../static/css/pedidos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand" href="../index.html#home">
+                    ☕ Cafeteria <span>Oliveira</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#home">
+                                Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="produtos.html">
+                                Produtos
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pedidos.html">
+                                Pedidos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-header">
+            <div class="container">
+                <p class="page-label">Cafeteria Oliveira</p>
+
+                <h1>Faça seu pedido</h1>
+
+                <p>
+                    Escolha seus favoritos e aproveite o melhor sabor da casa.
+                </p>
+            </div>
+        </section>
+
+        <section class="pedido-section">
+            <div class="container">
+
+                <div class="pedido-layout">
+
+                    <div class="pedido-box">
+                        <div class="pedido-heading">
+                            <p class="section-label">Sugestões da casa</p>
+                            <h2>Confira algumas opções</h2>
+                            <p>
+                                Consulte os produtos disponíveis e informe seu pedido no formulário.
+                            </p>
+                        </div>
+
+                        <div class="pedido-item">
+                            <div class="pedido-info">
+                                <h3>Café expresso</h3>
+                                <p>Intenso e aromático.</p>
+                            </div>
+
+                            <div class="pedido-preco">
+                                R$ 7,90
+                            </div>
+                        </div>
+
+                        <div class="pedido-item">
+                            <div class="pedido-info">
+                                <h3>Cappuccino </h3>
+                                <p>Leite vaporizado e espuma fina.</p>
+                            </div>
+
+                            <div class="pedido-preco">
+                                R$ 12,90
+                            </div>
+                        </div>
+
+                        <div class="pedido-item">
+                            <div class="pedido-info">
+                                <h3>Brigadeiro gourmet</h3>
+                                <p>Doce irresistível, com textura macia e cremosa</p>
+                            </div>
+
+                            <div class="pedido-preco">
+                                R$ 5,00
+                            </div>
+                        </div>
+
+                        <div class="pedido-item">
+                            <div class="pedido-info">
+                                <h3>Bolo de Chocolate</h3>
+                                <p>Fatia macia com cobertura cremosa.</p>
+                            </div>
+
+                            <div class="pedido-preco">
+                                R$ 12,90
+                            </div>
+                        </div>
+
+                        <a href="produtos.html" class="menu-link">
+                            Ver cardápio completo
+                        </a>
+                    </div>
+
+                    <form class="form-pedido">
+
+                        <div class="form-heading">
+                            <p class="section-label">Seu pedido</p>
+                            <h2>Preencha seus dados</h2>
+                            <p>
+                                Informe os detalhes para prepararmos tudo com carinho.
+                            </p>
+                        </div>
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label for="nome" class="form-label">
+                                    Nome
+                                </label>
+
+                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome"
+                                    required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="telefone" class="form-label">
+                                    Telefone
+                                </label>
+
+                                <input type="tel" class="form-control" id="telefone" placeholder="(11) 99999-9999"
+                                    required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="pedido" class="form-label">
+                                    Pedido
+                                </label>
+
+                                <input type="text" class="form-control" id="pedido"
+                                    placeholder="Ex.: 2 cappuccinos e 1 bolo" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="observacoes" class="form-label">
+                                    Observações
+                                </label>
+
+                                <textarea class="form-control" id="observacoes" rows="5"
+                                    placeholder="Ex.: sem açúcar, pouco gelo, retirar no balcão..."></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="order-submit">
+                                    Enviar pedido
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="brand-icon">☕</div>
+                    <div>
+                        <h3>Cafeteria Oliveira</h3>
+                        <p>Café artesanal e momentos especiais.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Menu</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="pedidos.html">Pedidos</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contato</h4>
+                    <ul class="footer-list">
+                        <li><span>📍</span> Rua das Flores, 245</li>
+                        <li><span>📞</span> (11) 99999-8888</li>
+                        <li><a href="mailto:contato@cafeteriaoliveira.com"><span>📧</span>
+                                contato@cafeteriaoliveira.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram" title="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook" title="Facebook">Facebook</a>
+                    <a href="#" aria-label="WhatsApp" title="WhatsApp">WhatsApp</a>
+                </div>
+                <p>© 2026 Cafeteria Oliveira. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
